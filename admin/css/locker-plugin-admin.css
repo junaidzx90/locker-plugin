@@ -1,0 +1,68 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+ #locker-wrapper table tr th{
+     width: 20%;
+ }
+ #locker-wrapper table tr td{
+    width: 80%;
+}
+div#is_post_locked .inside {
+    margin-top: 0;
+    padding: 0;
+}
+div#locker_setting {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+}
+div#locker_setting label{
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+div.options_settings{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+div.options_settings{
+    padding: 10px;
+    padding-top: 0;
+}
+div.roles_settings{
+    padding: 10px;
+    padding-bottom: 0;
+}
+div.select-dates{
+    padding: 10px;
+    padding-bottom: 0;
+}
+span.is_loked {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #d5d5d5d6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button.edit_locked {
+    cursor: pointer;
+    background: #198fd9;
+    color: #fff;
+    border: 1px solid;
+    padding: 8px 28px;
+    box-shadow: 0 0 8px #198fd9;
+}
+
+button.edit_locked:hover{
+    background: #146ba2;
+    transition: .5s;
+}
+
+.lock-title{
+    margin-bottom: 0;
+}
