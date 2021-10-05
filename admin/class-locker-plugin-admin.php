@@ -256,19 +256,19 @@ class Locker_Plugin_Admin {
 			}else{
 				delete_post_meta( $post_id, 'is_post_locked' );
 			}
-		}
 
-		// Start date
-		if(isset($_POST['locker_lock-start-date'])){
-			$start_date = $_POST['locker_lock-start-date'];
-			$locked['start_date'] = $start_date;
-		}
-		// End date
-		if(isset($_POST['locker_lock-end-date']) && !empty($_POST['locker_lock-end-date'])){
-			$end_date = $_POST['locker_lock-end-date'];
-			$locked['end_date'] = $end_date;
-		}else{
-			$locked = [];
+			// Start date
+			if(isset($_POST['locker_lock-start-date'])){
+				$start_date = $_POST['locker_lock-start-date'];
+				$locked['start_date'] = $start_date;
+			}
+			// End date
+			if(isset($_POST['locker_lock-end-date']) && !empty($_POST['locker_lock-end-date'])){
+				$end_date = $_POST['locker_lock-end-date'];
+				$locked['end_date'] = $end_date;
+			}else{
+				$locked = [];
+			}
 		}
 
 		update_post_meta( $post_id, 'is_post_locked', $locked);
